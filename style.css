@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@400;500&family=Space+Mono:wght@400;700&display=swap');
+:root{
+    --fn-reg:'Space Mono', monospace;
+    --fn-alt:'Inconsolata', monospace;
+    --fn-footer:'Montserrat', sans-serif;
+
+    --gray-main:#333333;
+    --gray-p: #4F4F4F;
+    --gray-footer: #BDBDBD;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    letter-spacing: -0.035em;
+  }
+  
+body{
+    background-color: #FFFFFF;
+    font-family: var(--fn-reg);
+}
+header{
+    font-weight: 700;
+    font-family: var(--fn-alt);
+    font-size: 1.5rem;
+    color: var(--gray-main);
+    padding-top: 2.5rem;
+    padding-left: 5rem;
+}
+.section_wrapper{
+    margin-left: 5rem;
+    margin-right: 7.4375rem;
+    margin-top: 12.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.section_image{
+    max-width: 550px;
+}
+.section_block_heading{
+    color: var(--gray-main);
+    font-size: 4rem;
+    max-width: 36rem;
+}
+.section_block_text{
+    max-width: 24rem;
+    margin-top: 2.275rem;
+    color: var(--gray-p);
+    font-size: 1.5rem;
+}
+.section_block_button{
+    margin-top: 4rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: var(--gray-main);
+    border: 0;
+}
+footer{
+    width: 100%;
+    position: absolute; 
+    bottom: 0;
+    text-align: center;
+    margin: 1.5rem auto;
+}
+.footer_text{
+    font-family: var(--fn-footer);
+    color: var(--gray-footer);
+    font-size: 0.875rem;
+}
+.footer_text_link{
+    font-weight: 700;
+    text-decoration: underline;
+}
